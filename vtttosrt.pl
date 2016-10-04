@@ -13,7 +13,6 @@ die "File \`$input\` does not exist\n" unless -e $input;
 open( my $fh, "<", $input )
     or die "Can't open < $input: $!\n";
 
-my $output = '';
 for ( my $item = 0, my $line; $line = <$fh>; )
 {
     # Ignore first line if it has WEBVTT declaration
